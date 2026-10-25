@@ -41,19 +41,6 @@ export default function SummaryCard({ incident, onStatusChange }) {
           </span>
         </div>
         <div className="summary-field">
-          <span className="f-label">Status</span>
-          <select
-            className="status-dropdown"
-            value={incident.status}
-            onChange={(e) => onStatusChange(e.target.value)}
-          >
-            <option value="OPEN">Open</option>
-            <option value="ACKNOWLEDGED">Acknowledged</option>
-            <option value="IN_PROGRESS">In Progress</option>
-            <option value="RESOLVED">Resolved</option>
-          </select>
-        </div>
-        <div className="summary-field">
           <span className="f-label">Detected Cycle</span>
           <span className="f-value mono">Cycle {incident.cycle}</span>
         </div>

@@ -31,8 +31,8 @@ export default function Sidebar({
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <span className="brand-mark">◆</span>
           <div className="brand-text">
-            <span className="brand-title">SENTINEL</span>
-            <span className="brand-sub">AIOps Core</span>
+            <span className="brand-title">Intelligent AIOps Platform</span>
+            <span className="brand-sub"></span>
           </div>
         </div>
         {/* Close Button visible on mobile screens */}

@@ -30,8 +30,8 @@ export default function TopHeader({
   return (
     <header className="topbar">
       <div className="topbar-left">
-        <h1>AIOps Incident Detection Dashboard</h1>
-        <span className="topbar-subtitle">Real-time failure classification &amp; forecasting</span>
+        <h1>Intelligent AIOps Platform</h1>
+        <span className="topbar-subtitle">Observability, Incident Detection &amp; Management</span>
       </div>
       <div className="topbar-right" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
 

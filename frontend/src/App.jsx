@@ -379,7 +379,7 @@ export default function App() {
         </button>
         <div className="mobile-logo">
           <span className="logo-mark">◆</span>
-          <span className="logo-text">SENTINEL</span>
+          <span className="logo-text">OBSERVEOPS</span>
         </div>
         <div className="mobile-tabs">
           <button 

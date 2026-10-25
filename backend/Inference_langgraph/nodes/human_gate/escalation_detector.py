@@ -84,8 +84,12 @@ class EscalationDetector:
         old_rank = SEVERITY_RANK.get(old_norm, 4)
         new_rank = SEVERITY_RANK.get(new_norm, 4)
 
-        # Escalation: new rank numerically LOWER = higher priority
-        return new_rank < old_rank
+        # Escalation into P1 (Critical) or P2 (High) requires human review.
+        # Transitions to P3 (Moderate) or P4 (Low) are auto-approved without human prompt.
+        is_escalation = new_rank < old_rank
+        is_high_priority_target = new_norm in ("P1", "P2")
+
+        return is_escalation and is_high_priority_target
 
     # ------------------------------------------------------------------
     # Auxiliary helpers (used by ReviewRequestBuilder)

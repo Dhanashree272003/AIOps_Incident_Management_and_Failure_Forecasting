@@ -54,3 +54,33 @@ backend/nodes/severity_update/output/
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# API keys and local credentials
+secrets/
+credentials.json
+token.json
+
+# Python environment and testing
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Large model and dataset files - review before excluding
+# Uncomment these only if you want Git to ignore these file types
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth

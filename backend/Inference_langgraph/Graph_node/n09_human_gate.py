@@ -175,10 +175,10 @@ def run(state: AIOpsLangState) -> dict[str, Any]:
 
     # ── Case C: Escalation — post review and wait for decision ────────────────
     if not needs_review:
-        # Neither escalation nor de-escalation — nothing to do
+        # Auto-commit revised severity for P3/P4 transitions without triggering human gate review
         return {
             "hg_needed":          False,
-            "committed_severity": committed_sev,
+            "committed_severity": revised_sev,
         }
 
     # Build the HumanReviewRequest

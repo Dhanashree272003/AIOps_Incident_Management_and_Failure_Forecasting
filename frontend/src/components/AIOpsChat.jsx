@@ -447,7 +447,7 @@ export default function AIOpsChat({
               </svg>
             </div>
             <div className="aiops-drawer-brand-text">
-              <span className="aiops-drawer-title">Sentinel AI</span>
+              <span className="aiops-drawer-title">ObserveOps AI</span>
               <span className="aiops-drawer-sub">QueryLangGraph02 · Live Feed</span>
             </div>
           </div>
